@@ -1,6 +1,7 @@
 # MetrelusWebsite
 
 ------------------------- Angular App --------------------------
+
 *ensure you have angular cli
 	npm install -g @angular/cli
 	OR to get latest version
@@ -19,6 +20,7 @@
 	- http://localhost:4400/
 
 --------------- Angular Deploy to Github Page ------------------
+
 *https://github.com/angular-schule/angular-cli-ghpages
 
 *create repo in github
@@ -37,6 +39,7 @@ To deploy app:
 *ng deploy --cname=metrelus.com
 
 -------------------------- DNS Config --------------------------
+
 *https://uxworks.online/3-steps-to-add-a-custom-domain-for-github-pages-for-your-angular-website/
 *https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider
 
