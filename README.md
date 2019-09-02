@@ -3,21 +3,23 @@
 ------------------------- Angular App --------------------------
 
 *ensure you have angular cli
-	npm install -g @angular/cli
-	OR to get latest version
-	npm install -g @angular/cli@next
+  npm install -g @angular/cli
+  OR to get latest version
+  npm install -g @angular/cli@next
 *ensure you have node v10 or higher
-	npm install npm@latest -g
+  npm install npm@latest -g
 *then run ng update
-*create angular project 
-	ng new <app-name> --defaults
-	-defaults is optional
+
+*create new angular project (DO NOT DO THIS STEP UNLESS REPLACING CURRENT WEBSITE)
+  ng new <app-name> --defaults
+  -defaults is optional
+ 
 *cd into <app-name>
 *Add ghpages to your application
-	ng add angular-cli-ghpages
+  ng add angular-cli-ghpages
 
 *ng serve
-	- http://localhost:4400/
+  http://localhost:4400/
 
 --------------- Angular Deploy to Github Page ------------------
 
