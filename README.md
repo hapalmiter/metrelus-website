@@ -2,43 +2,43 @@
 
 ------------------------- Angular App --------------------------
 
-*ensure you have angular cli
-  npm install -g @angular/cli
-  OR to get latest version
-  npm install -g @angular/cli@next
-*ensure you have node v10 or higher
-  npm install npm@latest -g
-*then run ng update
+* ensure you have angular cli
+  - npm install -g @angular/cli
+  - OR to get latest version
+  - npm install -g @angular/cli@next
+* ensure you have node v10 or higher
+  - npm install npm@latest -g
+* then run ng update
 
-*create new angular project (DO NOT DO THIS STEP UNLESS REPLACING CURRENT WEBSITE)
-  ng new <app-name> --defaults
-  -defaults is optional
+* create new angular project (DO NOT DO THIS STEP UNLESS REPLACING CURRENT WEBSITE)
+  - ng new <app-name> --defaults
+  - defaults is optional
  
-*cd into <app-name>
-*Add ghpages to your application
-  ng add angular-cli-ghpages
+* cd into <app-name>
+* Add ghpages to your application
+  - ng add angular-cli-ghpages
 
-*ng serve
-  http://localhost:4400/
+* ng serve
+  - http://localhost:4400/
 
 --------------- Angular Deploy to Github Page ------------------
 
-*https://github.com/angular-schule/angular-cli-ghpages
+* https://github.com/angular-schule/angular-cli-ghpages
 
-*create repo in github
+* create repo in github (DO NOT DO UNLESS CREATING NEW REPO)
 
 To commit and push to repo:
-*git remote add origin https://github.com/<username>/<repositoryname>.git
-	HINT: first ensure https://github.com/<username>/<repositoryname>.git goes to correct project by entering URL into browser
-*git commit -a -m "<commit message>"
-*For first push git 
+* git remote add origin https://github.com/<username>/<repositoryname>.git
+	- HINT: first ensure https://github.com/<username>/<repositoryname>.git goes to correct project by entering URL into browser
+* git commit -a -m "<commit message>"
+* For first push git 
 	- push origin master
 	- git push --set-upstream origin master
 * All other commits
 	- git push
 
 To deploy app:
-*ng deploy --cname=metrelus.com
+* ng deploy --cname=metrelus.com
 
 -------------------------- DNS Config --------------------------
 
