@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\assets\\images"
   ],
-  "SelectedNode": "\\src\\old_favicon.ico",
+  "SelectedNode": "\\src\\main.ts",
   "PreviewInSolutionExplorer": false
 }

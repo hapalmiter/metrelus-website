@@ -1,6 +1,6 @@
 {
   "name": "metrelus-website",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +22,10 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "angular-bootstrap-md": "^8.4.0",
     "angular-cli-ghpages": "^0.6.0-rc.2",
+    "chart.js": "^2.5.0",
+    "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "mdbootstrap": "^4.8.10",
     "rxjs": "~6.5.2",

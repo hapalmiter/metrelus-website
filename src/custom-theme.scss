@@ -4,6 +4,7 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
+
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -36,7 +37,8 @@ $metrelus-website-theme: mat-light-theme($metrelus-website-primary, $metrelus-we
 @include angular-material-theme($metrelus-website-theme);
 
 body,
-html {
+html,
+header {
   height: 100%;
 }
 
@@ -45,7 +47,6 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top:100px;
 }
 
 box div {
@@ -58,23 +59,99 @@ body {
   height: 100%;
   color: $primary-color-text;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  position: relative;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("./assets/images/road-grayscale.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.view {
+  height: 100vh !important;
+  display: flex;
 }
 
-.mat-toolbar {
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 75%;
+}
+
+.hr-dark {
+  border-top: 3px solid black;
+  width: 100%;
+}
+
+/*********** HEADER **************/
+.intro-header {
+  height: unset !important;
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 100%;
+  }
+}
+
+/*********** NAVBAR **************/
+.navbar {
+  background-color: $secondary-text-color !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.top-nav-collapse {
+  background-color: $primary-color-dark !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #4285F4;
+  }
+}
+
+.navbar .scrolling-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
+}
+
+  /*.navbar:not(.top-nav-collapse) {
   background: transparent !important;
-  color: $primary-color-text;
 }
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: $primary-color-dark !important;
+  }
+}*/
+  #product::before,
+  #technology::before,
+  #about::before,
+  #contact::before {
+    display: block;
+    content: " ";
+    margin-top: -65px;
+    height: 65px;
+    visibility: hidden;
+  }
+  /*@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: $primary-color-dark !important;
+  }
+}*/
+  /*********** FOOTER ***********/
+  footer {
+    margin-bottom: 0;
+  }
 
 
 

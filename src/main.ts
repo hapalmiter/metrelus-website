@@ -12,3 +12,15 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+//new WOW().init;
+
+//Navbar highlight section on scroll
+/*$('body').scrollspy({ target: '#navbarSupportedContent-7' });
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+
+$('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+})*/
