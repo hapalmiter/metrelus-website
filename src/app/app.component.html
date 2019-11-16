@@ -8,7 +8,7 @@
           <!--<img alt="" src="./assets/images/metrelus_logo_white.svg" />-->
           <strong>Metrelus, Inc.</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="true" aria-label="Toggle navigation" (click)="toggleNavbar()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -16,16 +16,16 @@
 
           <!--<links>-->
           <ul class="navbar-nav smooth-scroll" style="margin-left: auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#product">Product</a>
+            <li class="nav-item"  (click)="toggleNavbar()">
+              <a class="nav-link" data-toggle="active" href="#product">Product</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
               <a class="nav-link" href="#technology">Technology</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
               <a class="nav-link" href="#about">About Us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
