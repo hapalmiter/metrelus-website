@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Metrelus, Inc';
+
+  navbarOpen = false;
+
+	toggleNavbar() {
+	  this.navbarOpen = !this.navbarOpen;
+	}
 }
 

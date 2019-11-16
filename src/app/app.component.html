@@ -1,42 +1,42 @@
 <html lang="en" class="full-height">
 <body>
-
   <header>
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#body">
+        <a class="navbar-brand" href="#home">
           <!--<img alt="" src="./assets/images/metrelus_logo_white.svg" />-->
           <strong>Metrelus, Inc.</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="true" aria-label="Toggle navigation" (click)="toggleNavbar()">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!--<links>-->
-          <div id="navbarSupportedContent-7" class="collapse navbar-collapse" role="tablist">
-            <ul class="navbar-nav smooth-scroll" style="margin-left: auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#product">Product<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#technology">Technology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+        <div id="navbarSupportedContent-7" class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+
+          <!--<links>-->
+          <ul class="navbar-nav smooth-scroll" style="margin-left: auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technology">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </nav>
     <!-- Navbar -->
 
     <!-- Full Page Intro -->
-    <div id="body" class="view" style="background-image: url('./assets/images/road_background_gs.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div id="home" class="view" style="background-image: url('./assets/images/road_background_gs.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <!-- Mask & flexbox options-->
       <div class="mask rgba-black-light align-items-center">
         <!-- Content -->
@@ -62,7 +62,6 @@
     <!-- Full Page Intro -->
   </header>
   <!-- Main navigation -->
-
   <!--Main Layout-->
   <main>
     <div class="container">
@@ -98,9 +97,6 @@
 
         </div>
 
-        <div >
-            
-        </div>
         <!--Grid column-->
       </div>
       <!--Grid row-->
@@ -115,7 +111,7 @@
       </span>
     </div>
   </footer>
-  
+
 
 </body>
 </html>
