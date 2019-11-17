@@ -2,10 +2,10 @@
 <body>
   <header>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar" style="padding-top: 5px padding-bottom: 5px;">
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <!--<img alt="" src="./assets/images/metrelus_logo_white.svg" />-->
+          <img alt="" src="./assets/images/metrelus_logo_white.svg" width="60" height="30">
           <strong>Metrelus, Inc.</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
@@ -19,13 +19,13 @@
             <li class="nav-item"  (click)="toggleNavbar()">
               <a class="nav-link" data-toggle="active" href="#product">Product</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
+            <li class="nav-item" (click)="toggleNavbar()">
               <a class="nav-link" href="#technology">Technology</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
+            <li class="nav-item" (click)="toggleNavbar()">
               <a class="nav-link" href="#about">About Us</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="toggleNavbar()">
+            <li class="nav-item" (click)="toggleNavbar()">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
